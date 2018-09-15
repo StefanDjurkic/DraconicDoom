@@ -1,4 +1,4 @@
-Draconic Doom change log (Unreleased)
+# Draconic Doom change log (Unreleased)
 
 Entry 1:
 Author: Stefan Djurkic
