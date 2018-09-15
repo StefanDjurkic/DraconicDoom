@@ -1,3 +1,5 @@
+![projectPlan](https://github.com/StefanDjurkic/DraconicDoom/blob/master/Images/projectPlan-v0.0.1.jpg)
+
 /******************************************************************************************\
 This file is part of Draconic Doom.
 
@@ -19,7 +21,7 @@ along with "Draconic Doom".  If not, see <https://www.gnu.org/licenses/>.
 /******************************************************************************************\
 "Draconic Doom", Version 0.0.1
 
-FileName: readme
+FileName: readme.md
 
 Author:  Stefan Djurkic
 
@@ -34,7 +36,7 @@ Copyright 2018 Stefan Djurkic
 Section A: 
 Some essential information if you need to understand the code:
 
-1. The Creator.cpp/.h module is what brings all the functions together and creates the mechanics and game loop
+1. The Creator.cpp/.h module is what brings all the functions together, creates the mechanics and operates the game loop
 
 2. This game compares the interaction between a player object and a creature object whom both inherit from an Entity object (Entity.cpp/.h)
 
