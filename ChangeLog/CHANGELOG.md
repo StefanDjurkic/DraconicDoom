@@ -2,6 +2,4 @@
 
 ## [0.0.1] - 2018-09-15
 ### changed
-Author: Stefan Djurkic
-
 -Reorganized project folder and created a visual map
