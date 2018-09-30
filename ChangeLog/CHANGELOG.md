@@ -19,5 +19,7 @@
 -Fixed typos/grammar in the readmes
 ### Removed
 -Saveload.h from creator.h (as specified in the project plan)
-<sstream> from temphelpers.h
-<iostream> from gameloop.cpp
+
+sstream from temphelpers.h
+  
+iostream from gameloop.cpp
