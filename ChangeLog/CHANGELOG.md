@@ -13,6 +13,7 @@
 ## [0.0.2] - 2018-09-30
 ### Changed
 -Switched Templhelpers.h from Player.h to Player.cpp
+
 -Showbanner call in gameloop.cpp moved to creator.cpp
 ### Fixed
 -Fixed typos/grammar in the readmes
