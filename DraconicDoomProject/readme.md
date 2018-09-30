@@ -1,3 +1,4 @@
+0.0.1 objective complete. Working on 0.0.2 plan
 ![projectPlan](https://github.com/StefanDjurkic/DraconicDoom/blob/master/Images/projectPlan-v0.0.1.jpg)
 
 /******************************************************************************************\
