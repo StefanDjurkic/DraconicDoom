@@ -1,4 +1,4 @@
-0.0.1 objective complete. Working on 0.0.2 plan
+0.0.2 objective complete. Working on the 0.0.3 / 0.0.4 plan
 ![projectPlan](https://github.com/StefanDjurkic/DraconicDoom/blob/master/Images/projectPlan-v002.jpg)
 
 /******************************************************************************************\
@@ -20,7 +20,7 @@ along with "Draconic Doom".  If not, see <https://www.gnu.org/licenses/>.
 /******************************************************************************************/
 
 /******************************************************************************************\
-"Draconic Doom", Version 0.0.1
+"Draconic Doom", Version 0.0.2
 
 FileName: readme.md
 
