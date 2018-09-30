@@ -85,5 +85,5 @@ ipch/
 
 *.db
 
-DraconicDoom/.vs/*
-
+.vs/*
+/.vs
