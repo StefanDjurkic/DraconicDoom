@@ -84,8 +84,9 @@ ipch/
 !*.[Cc]ache/
 
 *.db
-
+.vs/*/*
 .vs/*
+DraconicDoomProject/.vs/*
 /.vs
 *.db
 *.VC.db
