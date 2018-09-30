@@ -26,6 +26,7 @@ See readme for more information on this program
 /******************************************************************************************/
 #include <iostream> 
 #include <string>
+#include "TempHelpers.h"
 #include "Player.h"
 using std::cin;
 using std::cout;

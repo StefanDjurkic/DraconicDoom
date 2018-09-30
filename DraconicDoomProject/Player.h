@@ -27,8 +27,9 @@ See readme for more information on this program
 #ifndef _Player_H_ 
 #define _Player_H_
 #include <vector>
-#include "TempHelpers.h"
+
 #include "Entity.h"
+using std::vector;
 namespace Draconic_Doom
 {
 	class Player : public Entity // player is a child of Entity
