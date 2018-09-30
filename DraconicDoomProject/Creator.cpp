@@ -49,14 +49,14 @@ namespace Draconic_Doom
 	/*This is our game loop, this function makes use of every module directly or indirectly to create and manipulate the game world*/
 	void Creator::DraconicDoomLoop()
 	{
-		ShowBanner(0);												// Title
+		ShowBanner(0);								// Title
 		/*Initializing Variables*/
-		int exit = 0;												// Exit variable
-		const char * gameMap = "SdMap.txt";							// Declare the games map file
-		const char * playerSave = "PlayerSave.txt";                 // Declare the players save file
-		Player p1;													// Create the default player object
-		vector <vector<int> > mapVector;						    // Declare the map vector which holds the coordinates for the game
-		std::ifstream fin2d(playerSave);                            // Create an ifstream object fin2d pointing to the player save file
+		int exit = 0;								// Exit variable
+		const char * gameMap = "SdMap.txt";			// Declare the games map file
+		const char * playerSave = "PlayerSave.txt"; // Declare the players save file
+		Player p1;									// Create the default player object
+		vector <vector<int> > mapVector;			// Declare the map vector which holds the coordinates for the game
+		std::ifstream fin2d(playerSave);            // Create an ifstream object fin2d pointing to the player save file
 		
 		/*Determine player information*/
 		if (fin2d)												    // If the player save file exists, then we know we can simply load the data otherwise we start from scratch
