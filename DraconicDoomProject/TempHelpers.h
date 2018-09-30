@@ -27,7 +27,6 @@ See readme for more information on this program
 #ifndef _TEMPHELPERS_H_ 
 #define _TEMPHELPERS_H_
 #include <iostream>
-#include <sstream>
 #include <string>
 #include <vector>
 #include "Constants.h"
