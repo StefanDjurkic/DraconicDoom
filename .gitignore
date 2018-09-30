@@ -88,3 +88,4 @@ ipch/
 .vs/*
 /.vs
 *.db
+*.VC.db
