@@ -1,5 +1,8 @@
 0.0.2 objective complete. Working on the 0.0.3 / 0.0.4 plan
+
 ![projectPlan](https://github.com/StefanDjurkic/DraconicDoom/blob/master/Images/projectPlan-v002.jpg)
+
+For previous plan visit: <https://raw.githubusercontent.com/StefanDjurkic/DraconicDoom/master/Images/projectPlan-v0.0.1.jpg>
 
 /******************************************************************************************\
 This file is part of Draconic Doom.
