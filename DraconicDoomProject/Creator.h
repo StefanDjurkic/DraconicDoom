@@ -17,7 +17,7 @@ along with "Draconic Doom".  If not, see <https://www.gnu.org/licenses/>.
 /******************************************************************************************/
 
 /******************************************************************************************\
-"Draconic Doom", Version 0.0.1
+"Draconic Doom", Version 0.0.2
 FileName: Creator.h
 Author:  Stefan Djurkic
 Contact: <https://www.StefanDjurkic.com> || stefandjurkic@gmail.com
@@ -110,7 +110,7 @@ namespace Draconic_Doom
 		/*Create and return a player object*/
 		Player CreatePlayerObject(Player & Player1);
 		/*Uses this objects functions to create a game loop*/
-		void DraconicDoomLoop(int exits);
+		void DraconicDoomLoop();
 		/*/*Based on a map vector and the players position, we move in one direction(cardinal direction) through player input and return the vector*/
 		vector<int> TraverseDirection(vector<vector<int>> mapVect, Player pp1);
 		/*This function returns where the player is on the provided mapVector based on the players position*/

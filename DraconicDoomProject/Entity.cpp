@@ -17,7 +17,7 @@ along with "Draconic Doom".  If not, see <https://www.gnu.org/licenses/>.
 /******************************************************************************************/
 
 /******************************************************************************************\
-"Draconic Doom", Version 0.0.1
+"Draconic Doom", Version 0.0.2
 FileName: Entity.cpp
 Author:  Stefan Djurkic
 Contact: <https://www.StefanDjurkic.com> || stefandjurkic@gmail.com
@@ -126,15 +126,15 @@ namespace Draconic_Doom
 	/*This function returns */
 	int Entity::Damage()
 	{
-		int attacks = 0; /*Initialize attacks to zero*/
-		/*If we exceed 5 through our random number function the attack misses, we set attack to 0 and alert the player with a message*/
-		if (RandomGen(0, 10) > 5) { cout << name << " Misses!" << endl; attacks = 0; } 
-		else
-		{/*If we don't exceed 5 through our random number function the attack succeeds, we set attack to the greatest of agi, str, or int*/
+		int attacks = 0;																// Initialize attacks to zero
+								 
+		if (RandomGen(0, 10) > 5) { cout << name << " Misses!" << endl; attacks = 0; }  // If attack misses, we set attack to 0 and alert the player with a message
+		else																		    // If attack succeeds, and we set attack to the greatest of agi, str, or int
+		{
 			attacks = GreatestNum(agility, strength, intelligence);
-			cout << name << " deals " << attacks << " damage!" << endl; /*Display damage amount*/
+			cout << name << " deals " << attacks << " damage!" << endl;					//Display damage amount
 		}
-		return attacks; /*Return the attack value*/
+		return attacks;																	// Return the attack value
 	}	
 
 	/*Function which returns the entity health*/
@@ -146,7 +146,7 @@ namespace Draconic_Doom
 	/*Overloaded operator -, used to deduct attack (int parameter) from health*/
 	void Entity::operator-(int hAttack)
 	{
-		health -= hAttack; /*deduct attack (int parameter) from health*/
-		cout << health << "HP remains" << endl; /*Let the player know how much health is left*/
+		health -= hAttack;								 // Deduct attack (int parameter) from health
+		cout << health << "HP remains" << endl;			 // Let the player know how much health is left
 	}
 }

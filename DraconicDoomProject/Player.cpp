@@ -17,7 +17,7 @@ along with "Draconic Doom".  If not, see <https://www.gnu.org/licenses/>.
 /******************************************************************************************/
 
 /******************************************************************************************\
-"Draconic Doom", Version 0.0.1
+"Draconic Doom", Version 0.0.2
 FileName: Player.cpp
 Author:  Stefan Djurkic
 Contact: <https://www.StefanDjurkic.com> || stefandjurkic@gmail.com
@@ -55,18 +55,20 @@ namespace Draconic_Doom
 	// Return a vector of the players strings to be saved by another function
 	vector <std::string> Player::SaveStrings()
 	{
-		vector <std::string> myStrings; // declare a string vector
-		myStrings.push_back(name); // add into the string vector our name
-		myStrings.push_back(species); // add to vector the species name
-		myStrings.push_back(job); // add into vector the job name 
-		return myStrings; // return the vector
+		vector <std::string> myStrings;				// Declare a string vector
+		myStrings.push_back(name);					// Add into the string vector our name
+		myStrings.push_back(species);				// Add to vector the species name
+		myStrings.push_back(job);					// Add into vector the job name 
+		return myStrings;							// Return the vector
 	}
 
 	// Return a stat vector of all player integers
 	vector <int> Player::SaveMyStats()
 	{
-		vector <int> myStats; // create the 1d int vector
-		myStats.push_back(health); //From here to the return value we push back all our player stast
+		vector <int> myStats;						// Create the 1d int vector
+		
+		/* From here to the return value we push back all our player stats */
+		myStats.push_back(health);					
 		myStats.push_back(strength);
 		myStats.push_back(intelligence);
 		myStats.push_back(defense);
@@ -77,7 +79,7 @@ namespace Draconic_Doom
 		myStats.push_back(level);
 		myStats.push_back(x);
 		myStats.push_back(y);
-		return myStats; // return our vector
+		return myStats;								// return our vector
 	}
 
 	// Get the players x coordinates
@@ -102,43 +104,42 @@ namespace Draconic_Doom
 	// Load the player
 	void Player::LoadPlayer(std::string File)
 	{
-		cout << "LOADING" << endl; // debug
-		std::ifstream file(File); // create the ifstream obj file
-		std::string named; // declare a string object called named
-		int target; // integer value to store payers integers
-		vector <std::string> playerNames; // vector of strings for the players string values
-		vector <int> playerStats;// vector of ints for the players stats
-		//int size = 0; // initialize size to zero not needed?
-		if (file.is_open()) // check if the file is open
+		cout << "LOADING" << endl;						
+		std::ifstream file(File);						// Create the ifstream obj file
+		std::string named;							    // Declare a string object called named
+		int target;                                     // Integer value to store payers integers
+		vector <std::string> playerNames;               // Vector of strings for the players string values
+		vector <int> playerStats;                       // Vector of ints for the players stats
+		if (file.is_open())								// check if the file is open
 		{
 			for (int i = 0; i < 11; i++) 
 			{
-				file >> target; //input into target some integer
-				playerStats.push_back(target); // add into vector target variable
+				file >> target;							//input into target some integer
+				playerStats.push_back(target);			// add into vector target variable
 			}
-			file.ignore(1000, '\n'); // skip a line
+			file.ignore(1000, '\n');					// skip a line
 			for (int j = 0; j < 3; j++)
 			{
-				file >> named; // input into named some string
-				playerNames.push_back(named); // add into playernames named variables
+				file >> named;							// input into named some string
+				playerNames.push_back(named);			// add into playernames named variables
 			}
-			file.close(); // close the file since we are done with it
+			file.close();								// close the file since we are done with it
 		}
-		int statSize = playerStats.size(); // get the playerStats size now that we have it filled
-		vector <int> position; // create a vector for player position
-		position.push_back(playerStats[statSize-2]); // add in the second to last vector position of player stats
-		position.push_back(playerStats[statSize-1]); // add in the final vector position of playerstats
-		SetPosition(position); // set position to our vector we just created
-		LoadAll(playerNames, playerStats); // set stats to our string and int vectors
+		int statSize = playerStats.size();				// get the playerStats size now that we have it filled
+		vector <int> position;							// create a vector for player position
+		position.push_back(playerStats[statSize-2]);	// add in the second to last vector position of player stats
+		position.push_back(playerStats[statSize-1]);	// add in the final vector position of playerstats
+		SetPosition(position);							// set position to our vector we just created
+		LoadAll(playerNames, playerStats);				// set stats to our string and int vectors
 	}
 
 	// function that takes in two vectors and sets the players stats with them
 	void Player::LoadAll(vector <std::string> nameVect, vector <int> statVect)
 	{
-		SetName(nameVect[0]); // set our name to the first position
-		SetSpeciesName(nameVect[1]); // set our speciesname to the second position
-		SetClassName(nameVect[2]); // set our job nae to the third position
-		SetStats(statVect); // set stats to the stat vector
-		SetLevel(statVect[8]); // set leve to the eigth position
+		SetName(nameVect[0]);							// Set name to the first position
+		SetSpeciesName(nameVect[1]);				    // Set speciesname to the second position
+		SetClassName(nameVect[2]);						// Set job name to the third position
+		SetStats(statVect);								// Set stats to the stat vector
+		SetLevel(statVect[8]);							// Set level to position 8
 	}
 }

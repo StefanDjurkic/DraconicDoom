@@ -17,7 +17,7 @@ along with "Draconic Doom".  If not, see <https://www.gnu.org/licenses/>.
 /******************************************************************************************/
 
 /******************************************************************************************\
-"Draconic Doom", Version 0.0.1
+"Draconic Doom", Version 0.0.2
 FileName: Creature.h
 Author:  Stefan Djurkic
 Contact: <https://www.StefanDjurkic.com> || stefandjurkic@gmail.com
